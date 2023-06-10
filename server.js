@@ -21,7 +21,10 @@ app.get("/drinks", (req, res) => {
     res.render("index.ejs", {drinks:capitalDrinks})
 })
 app.get("/drinks/:id", (req, res) => {
-    res.send(req.params.id) // forgot to commit
+    const id = req.params.id
+    drinks [id].image = drinks[id].image + '.png'
+    // console.log(drinks[id].image)
+    res.render("show.ejs", {drinks, id})
 })
 // HEY, LISTEN!!
 app.listen(3000, () => {

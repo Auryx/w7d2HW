@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include("imports.ejs") %>
+</head>
+<style type="text/css">
+    body {
+      color: blanchedalmond;
+      background-color: steelblue;
+    }
+</style>
+<body>
+    <h1>At foo bar</h1>
+
+    <h2><%= drinks[id].name %></h2>
+    <img src=<%= drinks[id].image %>>
+    <h3><%= drinks[id].price %></h3>
+</body>
+</html>
