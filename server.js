@@ -21,7 +21,7 @@ app.get("/drinks", (req, res) => {
     res.render("index.ejs", {drinks:capitalDrinks})
 })
 app.get("/drinks/:id", (req, res) => {
-    res.send(req.params.id)
+    res.send(req.params.id) // forgot to commit
 })
 // HEY, LISTEN!!
 app.listen(3000, () => {
